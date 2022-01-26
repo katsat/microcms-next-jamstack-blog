@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { client } from "../libs/client";
+import Image from 'next/image';
 
 export default function Home({ blog }) {
   return (
@@ -13,6 +14,12 @@ export default function Home({ blog }) {
           </li>
         ))}
       </ul>
+      <Image
+        src="/images/car_dashborad.png"
+        alt="Picture of a triangle"
+        width={500}
+        height={500}
+      />
     </div>
   );
 }
