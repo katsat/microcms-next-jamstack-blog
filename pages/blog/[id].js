@@ -1,4 +1,5 @@
 import { client } from "../../libs/client";
+import Image from 'next/image';
 import styles from '../../styles/Home.module.scss';
 
 export default function BlogId({ blog }) {
@@ -13,6 +14,13 @@ export default function BlogId({ blog }) {
           }}
           className={styles.post}
         />
+        <Image
+          src="https://s3.ap-northeast-1.amazonaws.com/img.app-liv.jp/noimage-article.png"
+          alt="Picture of a triangle"
+          width={500}
+          height={500}
+        />
+
       </main>
     );
   }
